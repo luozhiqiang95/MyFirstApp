@@ -1,0 +1,22 @@
+{
+  "data":[
+    {
+      "icon":"/Users/luozhiqiang/myproject/MyApp2/res/images/scrollViewImage/img_1.jpg",
+      "title":"图1"
+
+    },
+
+    {
+      "icon":"/Users/luozhiqiang/myproject/MyApp2/res/images/scrollViewImage/img_3.jpg",
+      "title":"图2"
+
+    },
+    {
+      "icon":"/Users/luozhiqiang/myproject/MyApp2/res/images/scrollViewImage/img_4.jpg",
+      "title":"图3"
+
+    }
+
+
+  ]
+}

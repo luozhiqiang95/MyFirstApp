@@ -1,0 +1,46 @@
+{
+
+  "data": [
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_computer.png",
+      "title":"职场信用"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_my.png",
+      "title":"简历优化"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_trending.png",
+      "title":"金卡Vip"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_contacts.png",
+      "title":"人才评估"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_check_box_outline_blank.png",
+      "title":"隐私设置"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_view_quilt.png",
+      "title":"现金借款"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_insert_emoticon.png",
+      "title":"我的福利"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_contacts.png",
+      "title":"意见反馈"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/ic_unstar_transparent.png",
+      "title":"我的活动"
+    }
+
+
+
+
+
+  ]
+}

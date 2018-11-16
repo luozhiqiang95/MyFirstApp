@@ -1,3 +1,3 @@
 # MyFirstApp
-
-![Image text](https://raw.githubusercontent.com/luozhiqiang95/image/master/images/1.png）
+这是一个仿猎聘App
+![Image text](https://githubusercontent.com/luozhiqiang95/image/raw/master/images/1.png）

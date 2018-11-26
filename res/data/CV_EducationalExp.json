@@ -1,0 +1,37 @@
+{
+
+  "data": [
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"公司名称"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"公司行业"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"职位名称"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"开始时间"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"结束时间"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"职责业绩"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"回报对象"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"下属人数"
+    }
+  ]
+}

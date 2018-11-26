@@ -1,6 +1,5 @@
 
 
-
 import React, { Component } from 'react';
 import {
     Text, View, FlatList, TouchableOpacity,StatusBar ,Image, StyleSheet,ScrollView
@@ -8,16 +7,13 @@ import {
 
 import FindFlatList from '../pages/scan/FindFlatList'
 import ScrollViewPage from '../model/ScrollViewPage'
+import ArtPage from "../pages/scan/ArtPage";
 export default class FindPage extends Component {
 
     // 配置页面导航header选项
     static navigationOptions = {
-        headerTitle: '首页',
-        headerStyle:{
-            backgroundColor: '#284280',
-            height:20,
+        header:null,
 
-        }
     };
 
     // 初始化
@@ -32,25 +28,18 @@ export default class FindPage extends Component {
         navigation.navigate('OccPlanScreen');};
     render () {
         return (
-            <ScrollView style={{backgroundColor:'#f3f3f4'}}>
-            <View style={{flex:1 ,}}>
 
-                {/* 顶部背景 */}
-                <StatusBar
-                    backgroundColor="#8DD1F9"
-                    barStyle="light-content"
-                />
+            <ScrollView style={{backgroundColor: '#f5fcff',}}>
 
-                {/* 商品列表 */}
-                <View style={{flex:1 ,backgroundColor:'#f3f3f4'}}>
+                <View style={{flex:1 ,backgroundColor: '#f5fcff',}}>
                     <ScrollViewPage />
 
                     <FindFlatList/>
                 </View>
-                <Text style={styles.text}
-                      onPress={() => this._OccPlanScreen()}>按我哟</Text>
+                <View>
+                    <ArtPage/>
+                </View>
 
-            </View>
             </ScrollView>
         )
     }
@@ -59,7 +48,7 @@ export default class FindPage extends Component {
 const styles = StyleSheet.create ({
     ScrollViewContent: {
         height:150,
-        paddingBottom:10,
+       // paddingBottom:10,
         borderBottomColor:'#eee',
         borderBottomWidth:2
     },

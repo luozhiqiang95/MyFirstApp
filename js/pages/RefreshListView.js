@@ -66,8 +66,8 @@ class RefreshListView extends PureComponent {
     shouldStartHeaderRefreshing = () => {
         log('[RefreshListView]  shouldStartHeaderRefreshing')
 
-        if (this.props.refreshState == RefreshState.HeaderRefreshing ||
-            this.props.refreshState == RefreshState.FooterRefreshing) {
+        if (this.props.refreshState === RefreshState.HeaderRefreshing ||
+            this.props.refreshState ===RefreshState.FooterRefreshing) {
             return false
         }
 
@@ -78,11 +78,11 @@ class RefreshListView extends PureComponent {
         log('[RefreshListView]  shouldStartFooterRefreshing')
 
         let {refreshState, data} = this.props
-        if (data.length == 0) {
+        if (data.length === 0) {
             return false
         }
 
-        return (refreshState == RefreshState.Idle)
+        return (refreshState === RefreshState.Idle)
     }
 
     render() {
@@ -93,7 +93,7 @@ class RefreshListView extends PureComponent {
                 ref={this.props.listRef}
                 onEndReached={this.onEndReached}
                 onRefresh={this.onHeaderRefresh}
-                refreshing={this.props.refreshState == RefreshState.HeaderRefreshing}
+                refreshing={this.props.refreshState === RefreshState.HeaderRefreshing}
                 ListFooterComponent={this.renderFooter}
                 onEndReachedThreshold={0.1}
                 {...this.props}

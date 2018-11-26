@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 
 const {width, height} = require('Dimensions').get('window');
-export default class SettingScreen extends Component {
+export default class AnotherScreen extends Component {
     render() {
         return (
             <View style={styles.container}>

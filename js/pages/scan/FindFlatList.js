@@ -19,13 +19,14 @@ export default class FindFliatList extends Component{
         const {navigation} = this.props;
         navigation.navigate('OccPlanScreen');};
 
-    render(){
 
+    render(){
 
         return(
             <View style={styles.container} >
+
                 <View style={styles.View}>
-                <TouchableOpacity  onPress={() => this._OccPlanScreen()}>
+                <TouchableOpacity >
 
                         <View style={styles.ItemView} >
                             <View style={styles.imageView}>
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
 
         marginTop: 20,
         height:100,
-        backgroundColor :'#f3f3f4'
+        backgroundColor: '#f5fcff',
 
 
 

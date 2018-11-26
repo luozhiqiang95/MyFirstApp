@@ -1,0 +1,50 @@
+{
+
+  "data": [
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"出生日期"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"当前城市"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"开始工作"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"手机号码"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"电子邮箱"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"公司名称"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"当前职位"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"当前行业"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"当前职能"
+    },
+    {
+      "image":"/Users/luozhiqiang/myproject/MyApp2/res/images/Arrow.png",
+      "title":"当前状态"
+    }
+
+
+
+
+
+  ]
+}

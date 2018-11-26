@@ -20,6 +20,7 @@ const {width, height} = require('Dimensions').get('window');
 export default class MyPage extends Component{
     static navigationOptions = {
         header:null,
+
     };
 
     constructor(props) {
@@ -54,11 +55,7 @@ export default class MyPage extends Component{
             </ScrollView>
         )
     }
-    _ItemDivideComponent(){
-        return(
-            <View style={{height: 0.5,width:width-8, backgroundColor: 'rgba(0,0,0,0.4)'}}/>
-        )
-    }
+    4
     getView({item}) {
         //这里返回的就是每个Item
 
@@ -73,8 +70,8 @@ export default class MyPage extends Component{
                     </View>
                     <View style={styles.rightView}>
                         <Text style={styles.text}>未完成</Text>
-                        <Image style={{ height:40,
-                            width:40,marginRight:10,}}
+                        <Image style={{ height:30,
+                            width:30,marginRight:10,}}
                                source={require('/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/kasha.png')}/>
                     </View>
                 </View>
@@ -85,7 +82,7 @@ export default class MyPage extends Component{
         return(
             <ScrollView>
                 <View style={styles.container}>
-                    <ImageBackground style={{width:width,height:130,marginTop:25}}
+                    <ImageBackground style={{width:width,height:130}}
                     source={require('/Users/luozhiqiang/myproject/MyApp2/res/images/timg.jpg')}
                                      >
                         <TouchableHighlight onPress={() => this._CV_Page()}>

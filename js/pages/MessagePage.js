@@ -1,131 +1,114 @@
 
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, {Component} from 'react';
-import {
-    StyleSheet,
-    FlatList,
-    ScrollView,
-    Image,
-    TouchableOpacity,
-    Text,
-    View
-} from 'react-native';
-import ImageData from "/Users/luozhiqiang/myproject/MyApp2/js/pages/my/MyList.json";
+import React, { Component } from 'react';
+import { StyleSheet, View ,Image,TouchableOpacity,Text,TextInput} from 'react-native';
+import  ScrollableTabView  from '../common/ScrollableTabView/ScrollableTabView';
+import RefreshControl from './RefreshControl';
 const {width, height} = require('Dimensions').get('window');
-export default class MessagePage extends Component<{}> {
 
-
+export default class MessagePage extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            dataArray: ImageData.data,//存储列表使用的数据
-        };
+        this.state = {};
     }
 
-    _renderFlatlist() {
 
-
+ render() {
         return (
-            <ScrollView>
-                <FlatList
-                    data={this.state.dataArray}
-                    renderItem={(item) => this.getView(item)}
-                    ItemSeparatorComponent={this._ItemDivideComponent}
-
-                />
-            </ScrollView>
-        )
-    }
-    _ItemDivideComponent(){
-        return(
-            <View style={{height: 0.5,width:width-8, backgroundColor: 'rgba(0,0,0,0.4)'}}/>
-        )
-    }
-
-    render() {
-        return (
-
             <View style={styles.container}>
+                <TouchableOpacity>
+                <View style={styles.TextView}>
+                    <View style={{
+                        marginTop:5,
+                        height:30,
+                        width:width-10,
+                        backgroundColor: 'rgba(0,0,0,0.4)',
+                        alignItems:'center',
+                        justifyContent:'center',
+                        flexDirection: 'row',}}>
+                            <Image style={{height:20,width:20,}}
+                             source={require('/Users/luozhiqiang/myproject/MyApp2/res/images/search2.png')}/>
 
-                {this._renderFlatlist()}
-
-            </View>
-
-        );
-    }
-    getView({item}) {
-        //这里返回的就是每个Item
-
-
-        return (
-            <TouchableOpacity>
-                <View style={styles.cellStyle}>
-                    <View style={styles.liftView}>
-                        <Image style={styles.imagesView}
-                            source={{url:item.image}}/>
-                        <Text style={styles.text}>{item.title}</Text>
-                    </View>
-                    <View style={styles.rightView}>
-                        <Text style={styles.text}>未完成</Text>
-                        <Image style={{ height:40,
-                            width:40,marginRight:10,}}
-                            source={require('/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/kasha.png')}/>
+                            <TextInput style={styles.textInput}
+                               placeholder='请输入姓名搜索对话'>
+                             </TextInput>
                     </View>
                 </View>
-            </TouchableOpacity>
+                </TouchableOpacity>
+                <View style={styles.message}>
+                    <TouchableOpacity>
+                    <View style={styles.messageList}>
+                        <Image style={styles.imageStyles}
+                        source={require('/Users/luozhiqiang/myproject/MyApp2/res/images/img_1.png')}/>
+                        <Text style={styles.text}>求职小秘书</Text>
+                    </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                    <View style={styles.messageList}>
+                        <Image style={styles.imageStyles}
+                        source={require('/Users/luozhiqiang/myproject/MyApp2/res/images/Z_Letter_96px_1121603_easyicon.net.png')}/>
+
+                        <Text style={styles.text}>猎聘小秘书</Text>
+                    </View>
+                    </TouchableOpacity>
+                </View>
+                <View style={{height:25, backgroundColor: '#C7C7C7'}}>
+
+                <Text style={{fontSize: 15, Color: '#333',paddingBottom: 5,paddingTop: 5,marginLeft:10,}}>最近沟通</Text>
+                </View>
+                <View>
+                    <Text  style={styles.text}>历史消息记录</Text>
+                </View>
+            </View>
+
         )
+
     };
 }
-
-
-
-const styles = StyleSheet.create({
-    container: {
+const styles=StyleSheet.create({
+    container:{
         flex:1,
-
-
-        backgroundColor: '#F5FCFF',
+        backgroundColor:'#F5FCFF'
     },
-    cellStyle:{
+    TextView: {
+        height: 40,
+
+        alignItems:'center',
+
+    },
+    textInput:{
+        fontSize: 18,
+        marginLeft:5,
+
+        width: width-35
+    },
+    imageStyles:{
+        width:50,
         height:50,
-        backgroundColor: 'white',
-        flexDirection: 'row',
-
-
+        borderRadius:25,
+        marginLeft:5
+    },
+    message:{
+        height:120,
+        alignItems:'center',
+        width:width
 
     },
-    liftView:{
-        marginLeft:10,
-        flexDirection: 'row',
-        width:150,
-        backgroundColor:'#F5FCFF',
-        alignItems:'center'
-    },
-    rightView:{
-        flexDirection: 'row',
-        width:width-150,
-        justifyContent:'flex-end',
-        backgroundColor:'#F5FCFF',
-        alignItems:'center'
-
-
-    },
-    imagesView:{
-        marginLeft:10,
-        height:18,
-        width:18,
+    messageList:{
+        flexDirection:'row',
+        height:60,
+        width:width,
+        alignItems: 'center',
+        borderWidth: 0.5,
+        borderColor:'rgba(0,0,0,0.4)',
+        backgroundColor:'#F5FCFF'
     },
     text:{
-        fontSize:20,
-        marginLeft:15,
-        color:'rgba(0,0,0,0.4)',
-        justifyContent: 'center',
-        alignItems: 'center',
-
+        fontSize:18,
+        width:width-60,
+        marginLeft: 10
     }
+
+
+
+
 });

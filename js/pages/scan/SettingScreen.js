@@ -13,7 +13,7 @@ export default class SettingScreen extends Component {
         },
         headerStyle:{
             backgroundColor: '#284280',
-            height:30,
+            height:25,
 
         }
     };
@@ -79,6 +79,7 @@ export default class SettingScreen extends Component {
                     borderBottomWidth: 1,
                     paddingBottom: 15}}>
                 <Text style={styles.text}>
+
                     退出登陆
                 </Text>
                 </TouchableOpacity>

@@ -7,6 +7,8 @@ import SearchPage from '../pages/SearchPage';
 //import MyPage from '../my/MyPage';
 import {AppcreateStackNavigator} from '../navigators/AppcreateStackNavigator'
 import {AppFindcreateStackNavigator} from '../navigators/AppcreateStackNavigator'
+import {AppSeacrchcreateStackNavigator} from '../navigators/AppcreateStackNavigator'
+import {AppPositioncreateStackNavigator} from '../navigators/AppcreateStackNavigator'
 import React, {Component}from "react";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -25,7 +27,7 @@ export default class HomePage extends Component{
 export  const AppTabNav=createBottomTabNavigator({
 
     PositionPage: {
-        screen: PositionPage,
+        screen: AppPositioncreateStackNavigator,
         navigationOptions: {
             tabBarLabel: '职位',
             tabBarIcon: ({ tintColor, focused }) => (
@@ -55,9 +57,9 @@ export  const AppTabNav=createBottomTabNavigator({
         navigationOptions: {
             tabBarLabel: '发现',
             tabBarIcon: ({ tintColor, focused }) => (
-                <Image style={[styles.footImages, {tintColor: tintColor}]}
+                <Image style={[styles.footImage, {tintColor: tintColor}]}
                        resizeMode='contain'
-                       source={require('/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/look.png')}
+                       source={require('/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/search.png')}
                 />
             )
 
@@ -66,14 +68,14 @@ export  const AppTabNav=createBottomTabNavigator({
 
     },
     SearchPage: {
-        screen: SearchPage,
+        screen: AppSeacrchcreateStackNavigator,
         navigationOptions: {
 
-            tabBarLabel: '找人',
+            tabBarLabel: '学习',
             tabBarIcon: ({ tintColor, focused }) => (
                 <Image style={[styles.footImage, {tintColor: tintColor}]}
                        resizeMode='contain'
-                       source={require('/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/search.png')}
+                       source={require('/Users/luozhiqiang/myproject/MyApp2/js/pages/my/img/look.png')}
                 />
             )
 

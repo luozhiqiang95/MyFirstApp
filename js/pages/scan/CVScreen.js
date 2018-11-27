@@ -63,18 +63,18 @@ export default class CVScreen extends Component {
                 }}>
                 </View>
                 <CV_MODEL
-                    Text='工作经历' onPress={this.props}
+                    Text='工作经历' onPress={this.props} Url='CV_WorkExpDetails'
                     />
                 <CV_MODEL
-                    Text='教育经历'/>
+                    Text='教育经历' onPress={this.props} Url='CV_EducationalExp'/>
                 <CV_MODEL
-                    Text='职业意向'/>
+                    Text='职业意向' onPress={this.props} />
                 <CV_MODEL
-                    Text='语言能力'/>
+                    Text='语言能力' onPress={this.props}/>
                 <CV_MODEL
-                    Text='项目经验'/>
+                    Text='项目经验' onPress={this.props}/>
                 <CV_MODEL
-                    Text='自我评价'/>
+                    Text='自我评价' onPress={this.props}/>
 
 
             </View>

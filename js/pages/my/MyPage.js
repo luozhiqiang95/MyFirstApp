@@ -85,7 +85,7 @@ export default class MyPage extends Component{
                     <ImageBackground style={{width:width,height:130}}
                     source={require('/Users/luozhiqiang/myproject/MyApp2/res/images/timg.jpg')}
                                      >
-                        <TouchableHighlight onPress={() => this._CV_Page()}>
+                        <TouchableOpacity activeOpacity={1.0} onPress={() => this._CV_Page()}>
                         <View style={{flexDirection:'row',}} >
                             <View style={{alignItems:'center',
                                     justifyContent: 'center',width:width-70,marginLeft:35}}>
@@ -104,7 +104,7 @@ export default class MyPage extends Component{
                                 </TouchableOpacity>
                             </View>
                         </View>
-                        </TouchableHighlight>
+                        </TouchableOpacity>
                     </ImageBackground>
                     <View>
                     <View style={styles.textView}>

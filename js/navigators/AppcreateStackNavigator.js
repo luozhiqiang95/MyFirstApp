@@ -15,6 +15,8 @@ import SearchPage from "../pages/SearchPage";
 import DetailsScreen from'../pages/scan/Details'
 import PositionDetailsScreen from "../pages/scan/PositionDetails";
 import CVScreenDetails from '../pages/my/CVScreenDetails'
+import CV_WorkExpDetails from '../pages/my/CV_WorkExpDetails'
+import CV_EducationalExp from '../pages/my/CV_EducationalExp'
 export  const AppcreateStackNavigator=createStackNavigator({
     MyPage:
         {
@@ -38,6 +40,13 @@ export  const AppcreateStackNavigator=createStackNavigator({
         screen:CVScreenDetails,
 
     },
+    CV_WorkExpDetails:{
+        screen:CV_WorkExpDetails,
+
+    },
+    CV_EducationalExp:{
+        screen:CV_EducationalExp,
+    }
 
 });
 export  const AppFindcreateStackNavigator=createStackNavigator({

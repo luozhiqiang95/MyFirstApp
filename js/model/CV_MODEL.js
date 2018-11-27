@@ -2,10 +2,10 @@ import {Image, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react
 import React,{Component} from "react";
 const {width, height} = require('Dimensions').get('window');
  export default class CV_MODEL extends Component{
-     _CVScreenDetails=() => {
+     _CV_WorkExpDetails=() => {
          console.log("hello")
          console.log(this.props)
-          this.props.onPress.navigation.navigate('CVScreenDetails');
+          this.props.onPress.navigation.navigate(this.props.Url);
      };
 
      render() {
@@ -14,7 +14,7 @@ const {width, height} = require('Dimensions').get('window');
         return (
 
             <View style={styles.container}>
-                <TouchableOpacity onPress={()=>this._CVScreenDetails()}>
+                <TouchableOpacity onPress={()=>this._CV_WorkExpDetails()}>
                < View style={{
                         width:width-10,
                         height:30,
